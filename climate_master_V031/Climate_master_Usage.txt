@@ -1,0 +1,72 @@
+Balint Buchert  (balintbuchert@gmail.com)
+to 
+Company:	Firelfly Clean Energy (UK)
+Project:	Climate Master Enviroment contorll 
+version:	0.31
+year:		2015-2016
+Project ID: 
+
+
+-----------------------------------------------------
+
+usage:
+
+compaling command; make 
+
+uploading to the board: make flash 
+
+clear bulid : make clear.
+
+The make flash command automatic open the gtkterm serial terminal after uploaded the file to the board.
+
+terminal refressing and reconecting  after reset use ./reterm scrip 
+
+ssh terminal automatic connecting and login ./ssh_login
+
+project is optimalied the Codebloks IDE 16.10
+
+project arm-gcc-none-ebai 4.9.2
+
+befor run setup the project>preferenc> use a castom Makefile
+
+
+------------------------------------------------------
+
+folder structure:
+
+    climate_master
+	bulid			 ( the buldide hex and bin file )
+
+	flowChart		 ( project, function, files flowcharts )
+
+	include/		 ( project header header files )
+		button.h	 ( switching modul current driver header )
+		climate_conf.h	 ( init conf header )
+		comterm.h	 ( 3G modem driver header )
+		ds18b20.h	 ( thermal sensor driver header )
+		fuzzy.h		 ( PWM fan controll dirver header )
+		studer_can.h	 ( Studer system XCOM CAN Driver header )
+		usbcfg.h	 ( USB terminal config gloabal variable header )
+		usbconf.h	 ( USB terminal config header )
+		usbterm.h	 ( USB termnial commands and driver header )
+
+	obj
+	src/			 ( project c files )
+		button.c 
+		climate_conf.c
+		comterm.c
+		ds18b20.c
+		fizzy.c
+		studer_can.c
+		usbcfg.c
+		usbterm.c
+	Makefile
+	climate_master.cbp	 ( coadbloks project file )
+	chconf.h 		 ( RTOS TASK config file )
+	halconf.h		 ( RTOS HAL config file )
+	mcuconf.h		 ( RTOS MC config fiel )
+	reterm			 ( gtkterm serial terminal reset )
+	ssh_login		 ( ssh automatic login / disabeld this veriso 3G modem)
+	main.c			 ( main program )
+
+-------------------------------------------------------

@@ -1,0 +1,904 @@
+ARM GAS  /tmp/ccCHyIgR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 2
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"crt1.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.section	.gnu.lto_.jmpfuncs.1d3360aecbd424f,"",%progbits
+  18 0000 789C6362 		.ascii	"x\234cb`b\300\006\270\2404\013\003\003#P\0113\003\003"
+  18      6062C006 
+  18      B8A0340B 
+  18      03032350 
+  18      09330303 
+  19 0014 0001C400 		.ascii	"\000\001\304\000\031"
+  19      19
+  20              		.text
+  21              		.section	.gnu.lto_.inline.1d3360aecbd424f,"",%progbits
+  22 0000 789C6362 		.ascii	"x\234cb`b\300\006<\2414\013\003\0033\023#X\021\333\002"
+  22      6062C006 
+  22      3CA1340B 
+  22      03033313 
+  22      235811DB 
+  23 0015 79B05A46 		.ascii	"y\260ZF\014\021&\014\021f \017\"\302\002\265\000\000"
+  23      0C11260C 
+  23      1166200F 
+  23      22C202B5 
+  23      0000
+  24 0027 841802D0 		.ascii	"\204\030\002\320"
+  25              		.text
+  26              		.section	.gnu.lto_.pureconst.1d3360aecbd424f,"",%progbits
+  27 0000 789C6362 		.ascii	"x\234cb`b\340d\200\000\026\006\011F\011&\011f\023\000"
+  27      6062E064 
+  27      80001606 
+  27      09460926 
+  27      09661300 
+  28 0014 02D20094 		.ascii	"\002\322\000\224"
+  29              		.text
+  30              		.section	.gnu.lto___core_init.1d3360aecbd424f,"",%progbits
+  31 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\010\304\366@\314\310\314\300"
+  31      60624007 
+  31      92401C08 
+  31      C4F640CC 
+  31      C8CCC0
+  32 0013 C834E11C 		.ascii	"\3104\341\034\003C#\007\023##\210\301\300\310P\317\304"
+  32      03432307 
+  32      13232388 
+  32      C1C0C850 
+  32      CFC4
+ARM GAS  /tmp/ccCHyIgR.s 			page 2
+
+
+  33 0025 581FC908 		.ascii	"X\037\311\010V\273\236\351\300\203\377\377\327my\370"
+  33      56BB9EE9 
+  33      C083FFFF 
+  33      D76D79F8 
+  34 0035 30831164 		.ascii	"0\203\021d\022+CKC\303\004\005\006\206d\260|\010\220"
+  34      122B434B 
+  34      43C30405 
+  34      068664B0 
+  34      7C0890
+  35 0048 04690A05 		.ascii	"\004i\012\005J\002i\346\213\014\214\211\214\013\031"
+  35      4A0269E6 
+  35      8B0C8C89 
+  35      8C0B19
+  36 0057 59E17685 		.ascii	"Y\341v\20502\202$@Zm\365K\213\213\364\213\213\222\365"
+  36      30328224 
+  36      405A6DF5 
+  36      4B8B8BF4 
+  36      8B8B92F5 
+  37 006b 93333293 		.ascii	"\22332\2232\363\213\365\201(9?77?O\277 \277\250\244"
+  37      32F38BF5 
+  37      8128393F 
+  37      37373F4F 
+  37      BF20BFA8 
+  38 0080 58DF31C8 		.ascii	"X\3371\310\327\331\267\002$V\220\231\223ZT\254\357\356"
+  38      D7D9B702 
+  38      24569099 
+  38      935A54AC 
+  38      EFEE
+  39 0092 ECAC9F5C 		.ascii	"\354\254\237\\Tb\250\227\314\000\000\272\307,\231"
+  39      5462A897 
+  39      CC0000BA 
+  39      C72C99
+  40              		.text
+  41              		.section	.gnu.lto___early_init.1d3360aecbd424f,"",%progbits
+  42 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\000\304\366@\314\310\314\300"
+  42      60624007 
+  42      92401C00 
+  42      C4F640CC 
+  42      C8CCC0
+  43 0013 C834E11C 		.ascii	"\3104\341\034\003C#\007\023##\210\301\300\310P\317\304"
+  43      03432307 
+  43      13232388 
+  43      C1C0C850 
+  43      CFC4
+  44 0025 581FC908 		.ascii	"X\037\311\010V\273\236\351\300\203\377\377\327\375z"
+  44      56BB9EE9 
+  44      C083FFFF 
+  44      D7FD7A
+  45 0034 7A901164 		.ascii	"z\220\021d\020+CKC\303\004\005\006\206d\260t\010\220"
+  45      102B434B 
+  45      43C30405 
+  45      068664B0 
+  45      740890
+  46 0047 04E90905 		.ascii	"\004\351\011\005J\002i\346\213\014\214\211\214\013\031"
+  46      4A0269E6 
+  46      8B0C8C89 
+  46      8C0B19
+ARM GAS  /tmp/ccCHyIgR.s 			page 3
+
+
+  47 0056 59E15685 		.ascii	"Y\341V\20502\202$@Zm\365K\213\213\364\213\213\222\365"
+  47      30328224 
+  47      405A6DF5 
+  47      4B8B8BF4 
+  47      8B8B92F5 
+  48 006a 93333293 		.ascii	"\22332\2232\363\213\365\201(9?77?O\277 \277\250\244"
+  48      32F38BF5 
+  48      8128393F 
+  48      37373F4F 
+  48      BF20BFA8 
+  49 007f 58DF31C8 		.ascii	"X\3371\310\327\331\267\002$V\220\231\223ZT\254\357\356"
+  49      D7D9B702 
+  49      24569099 
+  49      935A54AC 
+  49      EFEE
+  50 0091 ECAC9F5C 		.ascii	"\354\254\237\\Tb\250\227\314\000\000\217\030,Z"
+  50      5462A897 
+  50      CC00008F 
+  50      182C5A
+  51              		.text
+  52              		.section	.gnu.lto___late_init.1d3360aecbd424f,"",%progbits
+  53 0000 789C6362 		.ascii	"x\234cb`b@\007\222@\034\000\304\366@\314\310\314\300"
+  53      60624007 
+  53      92401C00 
+  53      C4F640CC 
+  53      C8CCC0
+  54 0013 C834E11C 		.ascii	"\3104\341\034\003C#\007\023##\210\301\300\310P\317\304"
+  54      03432307 
+  54      13232388 
+  54      C1C0C850 
+  54      CFC4
+  55 0025 581FC908 		.ascii	"X\037\311\010V\273\236\351\300\203\377\377\327mk\233"
+  55      56BB9EE9 
+  55      C083FFFF 
+  55      D76D6B9B 
+  56 0035 23013288 		.ascii	"#\0012\210\225\241\245\241a\202\002\003C2X:\004H\202"
+  56      95A1A5A1 
+  56      61820203 
+  56      4332583A 
+  56      044882
+  57 0048 F4843232 		.ascii	"\364\20422\201h\346\213\014\214\211\214\013\031Y\341"
+  57      8168E68B 
+  57      0C8C898C 
+  57      0B1959E1 
+  58 0058 56853032 		.ascii	"V\20502\202$@Zm\365K\213\213\364\213\213\222\365\223"
+  58      8224405A 
+  58      6DF54B8B 
+  58      8BF48B8B 
+  58      92F593
+  59 006b 33329332 		.ascii	"32\2232\363\213\365\201(9?77?O\277 \277\250\244X\337"
+  59      F38BF581 
+  59      28393F37 
+  59      373F4FBF 
+  59      20BFA8A4 
+  60 0081 31C8D7D9 		.ascii	"1\310\327\331\267\002$V\220\231\223ZT\254\357\356\354"
+  60      B7022456 
+  60      9099935A 
+ARM GAS  /tmp/ccCHyIgR.s 			page 4
+
+
+  60      54ACEFEE 
+  60      EC
+  61 0092 AC9F5C54 		.ascii	"\254\237\\Tb\250\227\314\000\0006K+\251"
+  61      62A897CC 
+  61      0000364B 
+  61      2BA9
+  62              		.text
+  63              		.section	.gnu.lto___default_exit.1d3360aecbd424f,"",%progbits
+  64 0000 789C6362 		.ascii	"x\234cb`b@\007:@\354\003\304\366@\314\310\312\300\310"
+  64      60624007 
+  64      3A40EC03 
+  64      C4F640CC 
+  64      C8CAC0C8 
+  65 0014 34E11C03 		.ascii	"4\341\034\003C#\007\023#3\210\301\310\314\310\002\021"
+  65      43230713 
+  65      233388C1 
+  65      C8CCC802 
+  65      11
+  66 0025 60810838 		.ascii	"`\201\010822\32431\2630\326G2\202\265\257g:\360\340"
+  66      3232D433 
+  66      31B330D6 
+  66      473282B5 
+  66      AF673AF0 
+  67 003a FFFF751F 		.ascii	"\377\377u\037\216\315\275\3038\233\011$\306\312\320"
+  67      8ECDBDC3 
+  67      389B0924 
+  67      C6CAD0
+  68 0049 D2D03041 		.ascii	"\322\3200A\201\201!\031\254\"\004H2\002I&\240Y!\214"
+  68      81812119 
+  68      AC220448 
+  68      32024926 
+  68      A059218C 
+  69 005d CC0C4043 		.ascii	"\314\014@C\030C\030Y\2404\304\020\006[\375\322\342\""
+  69      18431859 
+  69      A034C410 
+  69      065BFDD2 
+  69      E222
+  70 006f FDE2A264 		.ascii	"\375\342\242d\375\344\214\314\244\314\374b} J\316\317"
+  70      FDE48CCC 
+  70      A4CCFC62 
+  70      7D204ACE 
+  70      CF
+  71 0080 CDCDCFD3 		.ascii	"\315\315\317\323/\310/*)\326w\014\362u\366\255\000\211"
+  71      2FC82F2A 
+  71      29D6770C 
+  71      F275F6AD 
+  71      0089
+  72 0092 1564E6A4 		.ascii	"\025d\346\244\026\025\353\273;;\353'\027\225\030\352"
+  72      1615EBBB 
+  72      3B3BEB27 
+  72      179518EA 
+  73 00a2 25330000 		.ascii	"%3\000\000d\036.\257"
+  73      641E2EAF 
+  74              		.text
+  75              		.section	.gnu.lto_.symbol_nodes.1d3360aecbd424f,"",%progbits
+  76 0000 789C6362 		.ascii	"x\234cb`b\260e\200\002\246\017\014\365\014\014\023\316"
+  76      6062B065 
+ARM GAS  /tmp/ccCHyIgR.s 			page 5
+
+
+  76      8002A60F 
+  76      0CF50C0C 
+  76      13CE
+  77 0012 3130D4D7 		.ascii	"10\324\327\317\353`d\372\310P\317\210\304\375\304P\317"
+  77      CFEB6064 
+  77      FAC850CF 
+  77      88C4FDC4 
+  77      50CF
+  78 0024 84C4FDCC 		.ascii	"\204\304\375\314P\317\014\343z0\000\000h\235\023\335"
+  78      50CF0CE3 
+  78      7A300000 
+  78      689D13DD 
+  79              		.text
+  80              		.section	.gnu.lto_.refs.1d3360aecbd424f,"",%progbits
+  81 0000 789C6362 		.ascii	"x\234cb`b`d\200\002\000\000F\000\006"
+  81      60626064 
+  81      80020000 
+  81      460006
+  82              		.text
+  83              		.section	.gnu.lto_.decls.1d3360aecbd424f,"",%progbits
+  84 0000 789C9590 		.ascii	"x\234\225\220?K\303@\030\306\337Kj\261X\352d\327vR\350"
+  84      3F4BC340 
+  84      18C6DF4B 
+  84      6AB158EA 
+  84      64D77652 
+  85 0015 60F00358 		.ascii	"`\360\003X\224\014\235\352\240\024\334\2163F\014\246"
+  85      940C9DEA 
+  85      A014DC8E 
+  85      33460CA6 
+  86 0025 49BD5CB1 		.ascii	"I\275\\\261n\207\203t,\202\216\322\372\217\024\"\324"
+  86      6E878374 
+  86      2C828ED2 
+  86      FA8F1422 
+  86      D4
+  87 0036 C5B90515 		.ascii	"\305\271\005\025\301/\321\217\320Y\204x\375gk\032\007"
+  87      C12FD18F 
+  87      D0598478 
+  87      FD676B1A 
+  87      07
+  88 0047 1FEE81F7 		.ascii	"\037\356\201\367r\317{\2777'\201\004/\000\340\013E%"
+  88      72CF7BBF 
+  88      37278104 
+  88      2F00E00B 
+  88      4525
+  89 0059 80AAA8E7 		.ascii	"\200\252\250\347\204\2630QD\270!\354\012{\302-\230U"
+  89      84B33051 
+  89      44B821EC 
+  89      0A7BC22D 
+  89      9855
+  90 006b 63AA4681 		.ascii	"c\252F\201\375Xn \343\206d\274@\306\013\311\264\002"
+  90      FD586E20 
+  90      E38664BC 
+  90      40C60BC9 
+  90      B402
+  91 007d 99B07952 		.ascii	"\231\260yRp\315\353\355\356\353\325\007\342\027\325"
+  91      70CDEBED 
+  91      EEEBD507 
+ARM GAS  /tmp/ccCHyIgR.s 			page 6
+
+
+  91      E217D5
+  92 008c 2FDF9721 		.ascii	"/\337\227!\011\227\\\250~\3169b\004e\227`\027\021\224"
+  92      09975CA8 
+  92      7ECE3962 
+  92      04659760 
+  92      171194
+  93 009f 88417A50 		.ascii	"\210AzP\304c\203\037\005 \350\006%GUA\036^'\301\006"
+  93      C463831F 
+  93      0520E806 
+  93      25475541 
+  93      1E5E27C1 
+  94 00b4 820C3445 		.ascii	"\202\0144E\177\215\363\263\0254\003\224EF\254\235\237"
+  94      7F8DF3B3 
+  94      15340394 
+  94      4546AC9D 
+  94      9F
+  95 00c5 9365B8EF 		.ascii	"\223e\270\357\343\270\313\345\001\254\177]\003\245\246"
+  95      E3B8CBE5 
+  95      01AC7F5D 
+  95      03A5A6
+  96 00d4 7B08BA45 		.ascii	"{\010\272E\322\354\324\355O\375\275\336\363\375\305"
+  96      D2ECD4ED 
+  96      4FFDBDDE 
+  96      F3FDC5
+  97 00e3 E1249218 		.ascii	"\341$\222\030OD\357Pf\002\"\350a\322\031Fr\203\244f"
+  97      4F44EF50 
+  97      660222E8 
+  97      61D21946 
+  97      7283A466 
+  98 00f7 28E9F92D 		.ascii	"(\351\371-^\353t}?5F\351\377GyA\324c\010\252\323\356"
+  98      5EEB747D 
+  98      3F3546E9 
+  98      FF477941 
+  98      D46308AA 
+  99 010d 0551C77F 		.ascii	"\005Q\307\177\242Fo\311\321\3643\207\241[A\364\323o"
+  99      A2466FC9 
+  99      D1F43387 
+  99      A15B41F4 
+  99      D36F
+ 100 011f 34AC2B65 		.ascii	"4\254+e\207*\016\325\024\355\320\3303lG\021K\263\213"
+ 100      872A0ED5 
+ 100      14EDD0D8 
+ 100      336C4711 
+ 100      4BB38B
+ 101 0132 45DB524A 		.ascii	"E\333RJ6e\216\262\271\235W\363\225\376\267\222a\352"
+ 101      36658EB2 
+ 101      B99D57F3 
+ 101      95FEB792 
+ 101      61EA
+ 102 0144 D45172AA 		.ascii	"\324Qr\252\252h\224\255\255j\260\200\261fS\035\033\226"
+ 102      AA6894AD 
+ 102      AD6AB080 
+ 102      B166531D 
+ 102      1B96
+ 103 0156 C1A2B9AD 		.ascii	"\301\242\271\255BZ\205\310\211N\216\342\030\353\204"
+ 103      425A85C8 
+ 103      894E8EE2 
+ARM GAS  /tmp/ccCHyIgR.s 			page 7
+
+
+ 103      18EB84
+ 104 0165 9AA78303 		.ascii	"\232\247\203\003\0212\011\033\206\022\030\357\353\007"
+ 104      1132091B 
+ 104      861218EF 
+ 104      EB07
+ 105 0173 A46C32AC 		.ascii	"\244l2\254W\0146o\211nV\246\3267l\270\233\316"
+ 105      570C366F 
+ 105      896E56A6 
+ 105      D6376CB8 
+ 105      9BCE
+ 106              		.text
+ 107              		.section	.gnu.lto_.symtab.1d3360aecbd424f,"",%progbits
+ 108 0000 5F5F636F 		.ascii	"__core_init\000\000\001\000\000\000\000\000\000\000"
+ 108      72655F69 
+ 108      6E697400 
+ 108      00010000 
+ 108      00000000 
+ 109 0015 0000A100 		.ascii	"\000\000\241\000\000\000__early_init\000\000\001\000"
+ 109      00005F5F 
+ 109      6561726C 
+ 109      795F696E 
+ 109      69740000 
+ 110 002b 00000000 		.ascii	"\000\000\000\000\000\000\000\000\250\000\000\000__l"
+ 110      00000000 
+ 110      A8000000 
+ 110      5F5F6C
+ 111 003a 6174655F 		.ascii	"ate_init\000\000\001\000\000\000\000\000\000\000\000"
+ 111      696E6974 
+ 111      00000100 
+ 111      00000000 
+ 111      000000
+ 112 004d 00AC0000 		.ascii	"\000\254\000\000\000__default_exit\000\000\001\000\000"
+ 112      005F5F64 
+ 112      65666175 
+ 112      6C745F65 
+ 112      78697400 
+ 113 0065 00000000 		.ascii	"\000\000\000\000\000\000\000\260\000\000\000"
+ 113      000000B0 
+ 113      000000
+ 114              		.text
+ 115              		.section	.gnu.lto_.opts,"",%progbits
+ 116 0000 272D6D63 		.ascii	"'-mcpu=cortex-m4' '-mno-thumb-interwork' '-mthumb' "
+ 116      70753D63 
+ 116      6F727465 
+ 116      782D6D34 
+ 116      2720272D 
+ 117 0033 272D6767 		.ascii	"'-ggdb' '-O2' '-fomit-frame-pointer' '-falign-funct"
+ 117      64622720 
+ 117      272D4F32 
+ 117      2720272D 
+ 117      666F6D69 
+ 118 0066 696F6E73 		.ascii	"ions=16' '-ffunction-sections' '-fdata-sections' '-"
+ 118      3D313627 
+ 118      20272D66 
+ 118      66756E63 
+ 118      74696F6E 
+ 119 0099 666E6F2D 		.ascii	"fno-common' '-flto'\000"
+ARM GAS  /tmp/ccCHyIgR.s 			page 8
+
+
+ 119      636F6D6D 
+ 119      6F6E2720 
+ 119      272D666C 
+ 119      746F2700 
+ 120              		.text
+ 121              		.cfi_sections	.debug_frame
+ 122              		.section	.text.__core_init,"ax",%progbits
+ 123              		.align	2
+ 124              		.p2align 4,,15
+ 125              		.weak	__core_init
+ 126              		.thumb
+ 127              		.thumb_func
+ 128              		.type	__core_init, %function
+ 129              	__core_init:
+ 130              	.LFB112:
+ 131              		.file 1 "/usr/src/chibios/os/common/ports/ARMCMx/compilers/GCC/crt1.c"
+ 132              		.loc 1 42 0
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 0
+ 135              		@ frame_needed = 0, uses_anonymous_args = 0
+ 136              		@ link register save eliminated.
+ 137 0000 7047     		bx	lr
+ 138              		.cfi_endproc
+ 139              	.LFE112:
+ 140              		.size	__core_init, .-__core_init
+ 141 0002 00BF     		.section	.text.__early_init,"ax",%progbits
+ 142              		.align	2
+ 143              		.p2align 4,,15
+ 144              		.weak	__early_init
+ 145              		.thumb
+ 146              		.thumb_func
+ 147              		.type	__early_init, %function
+ 148              	__early_init:
+ 149              	.LFB113:
+ 150              		.loc 1 61 0
+ 151              		.cfi_startproc
+ 152              		@ args = 0, pretend = 0, frame = 0
+ 153              		@ frame_needed = 0, uses_anonymous_args = 0
+ 154              		@ link register save eliminated.
+ 155 0000 7047     		bx	lr
+ 156              		.cfi_endproc
+ 157              	.LFE113:
+ 158              		.size	__early_init, .-__early_init
+ 159 0002 00BF     		.section	.text.__late_init,"ax",%progbits
+ 160              		.align	2
+ 161              		.p2align 4,,15
+ 162              		.weak	__late_init
+ 163              		.thumb
+ 164              		.thumb_func
+ 165              		.type	__late_init, %function
+ 166              	__late_init:
+ 167              	.LFB114:
+ 168              		.loc 1 75 0
+ 169              		.cfi_startproc
+ 170              		@ args = 0, pretend = 0, frame = 0
+ 171              		@ frame_needed = 0, uses_anonymous_args = 0
+ 172              		@ link register save eliminated.
+ARM GAS  /tmp/ccCHyIgR.s 			page 9
+
+
+ 173 0000 7047     		bx	lr
+ 174              		.cfi_endproc
+ 175              	.LFE114:
+ 176              		.size	__late_init, .-__late_init
+ 177 0002 00BF     		.section	.text.__default_exit,"ax",%progbits
+ 178              		.align	2
+ 179              		.p2align 4,,15
+ 180              		.weak	__default_exit
+ 181              		.thumb
+ 182              		.thumb_func
+ 183              		.type	__default_exit, %function
+ 184              	__default_exit:
+ 185              	.LFB115:
+ 186              		.loc 1 88 0
+ 187              		.cfi_startproc
+ 188              		@ Volatile: function does not return.
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191              		@ link register save eliminated.
+ 192              	.L5:
+ 193 0000 FEE7     		b	.L5
+ 194              		.cfi_endproc
+ 195              	.LFE115:
+ 196              		.size	__default_exit, .-__default_exit
+ 197 0002 00BF     		.text
+ 198              	.Letext0:
+ 199              		.file 2 "/usr/include/newlib/machine/_default_types.h"
+ 200              		.file 3 "/usr/include/newlib/sys/_stdint.h"
+ 201              		.file 4 "/usr/src/chibios/os/ext/CMSIS/include/core_cm4.h"
+ 202              		.section	.debug_info,"",%progbits
+ 203              	.Ldebug_info0:
+ 204 0000 D6000000 		.4byte	0xd6
+ 205 0004 0400     		.2byte	0x4
+ 206 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 207 000a 04       		.byte	0x4
+ 208 000b 01       		.uleb128 0x1
+ 209 000c DF000000 		.4byte	.LASF16
+ 210 0010 01       		.byte	0x1
+ 211 0011 81000000 		.4byte	.LASF17
+ 212 0015 00000000 		.4byte	.Ldebug_ranges0+0
+ 213 0019 00000000 		.4byte	0
+ 214 001d 00000000 		.4byte	.Ldebug_line0
+ 215 0021 02       		.uleb128 0x2
+ 216 0022 01       		.byte	0x1
+ 217 0023 06       		.byte	0x6
+ 218 0024 A2010000 		.4byte	.LASF0
+ 219 0028 02       		.uleb128 0x2
+ 220 0029 01       		.byte	0x1
+ 221 002a 08       		.byte	0x8
+ 222 002b 2E000000 		.4byte	.LASF1
+ 223 002f 02       		.uleb128 0x2
+ 224 0030 02       		.byte	0x2
+ 225 0031 05       		.byte	0x5
+ 226 0032 B8010000 		.4byte	.LASF2
+ 227 0036 02       		.uleb128 0x2
+ 228 0037 02       		.byte	0x2
+ 229 0038 07       		.byte	0x7
+ARM GAS  /tmp/ccCHyIgR.s 			page 10
+
+
+ 230 0039 0E000000 		.4byte	.LASF3
+ 231 003d 03       		.uleb128 0x3
+ 232 003e AE010000 		.4byte	.LASF9
+ 233 0042 02       		.byte	0x2
+ 234 0043 3F       		.byte	0x3f
+ 235 0044 48000000 		.4byte	0x48
+ 236 0048 02       		.uleb128 0x2
+ 237 0049 04       		.byte	0x4
+ 238 004a 05       		.byte	0x5
+ 239 004b D6000000 		.4byte	.LASF4
+ 240 004f 02       		.uleb128 0x2
+ 241 0050 04       		.byte	0x4
+ 242 0051 07       		.byte	0x7
+ 243 0052 49000000 		.4byte	.LASF5
+ 244 0056 02       		.uleb128 0x2
+ 245 0057 08       		.byte	0x8
+ 246 0058 05       		.byte	0x5
+ 247 0059 00000000 		.4byte	.LASF6
+ 248 005d 02       		.uleb128 0x2
+ 249 005e 08       		.byte	0x8
+ 250 005f 07       		.byte	0x7
+ 251 0060 6A000000 		.4byte	.LASF7
+ 252 0064 04       		.uleb128 0x4
+ 253 0065 04       		.byte	0x4
+ 254 0066 05       		.byte	0x5
+ 255 0067 696E7400 		.ascii	"int\000"
+ 256 006b 02       		.uleb128 0x2
+ 257 006c 04       		.byte	0x4
+ 258 006d 07       		.byte	0x7
+ 259 006e 21000000 		.4byte	.LASF8
+ 260 0072 03       		.uleb128 0x3
+ 261 0073 C2010000 		.4byte	.LASF10
+ 262 0077 03       		.byte	0x3
+ 263 0078 1F       		.byte	0x1f
+ 264 0079 3D000000 		.4byte	0x3d
+ 265 007d 02       		.uleb128 0x2
+ 266 007e 04       		.byte	0x4
+ 267 007f 07       		.byte	0x7
+ 268 0080 CA010000 		.4byte	.LASF11
+ 269 0084 05       		.uleb128 0x5
+ 270 0085 CA000000 		.4byte	.LASF12
+ 271 0089 01       		.byte	0x1
+ 272 008a 2A       		.byte	0x2a
+ 273 008b 00000000 		.4byte	.LFB112
+ 274 008f 02000000 		.4byte	.LFE112-.LFB112
+ 275 0093 01       		.uleb128 0x1
+ 276 0094 9C       		.byte	0x9c
+ 277 0095 05       		.uleb128 0x5
+ 278 0096 3C000000 		.4byte	.LASF13
+ 279 009a 01       		.byte	0x1
+ 280 009b 3D       		.byte	0x3d
+ 281 009c 00000000 		.4byte	.LFB113
+ 282 00a0 02000000 		.4byte	.LFE113-.LFB113
+ 283 00a4 01       		.uleb128 0x1
+ 284 00a5 9C       		.byte	0x9c
+ 285 00a6 05       		.uleb128 0x5
+ 286 00a7 BE000000 		.4byte	.LASF14
+ARM GAS  /tmp/ccCHyIgR.s 			page 11
+
+
+ 287 00ab 01       		.byte	0x1
+ 288 00ac 4B       		.byte	0x4b
+ 289 00ad 00000000 		.4byte	.LFB114
+ 290 00b1 02000000 		.4byte	.LFE114-.LFB114
+ 291 00b5 01       		.uleb128 0x1
+ 292 00b6 9C       		.byte	0x9c
+ 293 00b7 05       		.uleb128 0x5
+ 294 00b8 5B000000 		.4byte	.LASF15
+ 295 00bc 01       		.byte	0x1
+ 296 00bd 58       		.byte	0x58
+ 297 00be 00000000 		.4byte	.LFB115
+ 298 00c2 02000000 		.4byte	.LFE115-.LFB115
+ 299 00c6 01       		.uleb128 0x1
+ 300 00c7 9C       		.byte	0x9c
+ 301 00c8 06       		.uleb128 0x6
+ 302 00c9 95010000 		.4byte	.LASF18
+ 303 00cd 04       		.byte	0x4
+ 304 00ce A706     		.2byte	0x6a7
+ 305 00d0 D4000000 		.4byte	0xd4
+ 306 00d4 07       		.uleb128 0x7
+ 307 00d5 72000000 		.4byte	0x72
+ 308 00d9 00       		.byte	0
+ 309              		.section	.debug_abbrev,"",%progbits
+ 310              	.Ldebug_abbrev0:
+ 311 0000 01       		.uleb128 0x1
+ 312 0001 11       		.uleb128 0x11
+ 313 0002 01       		.byte	0x1
+ 314 0003 25       		.uleb128 0x25
+ 315 0004 0E       		.uleb128 0xe
+ 316 0005 13       		.uleb128 0x13
+ 317 0006 0B       		.uleb128 0xb
+ 318 0007 03       		.uleb128 0x3
+ 319 0008 0E       		.uleb128 0xe
+ 320 0009 55       		.uleb128 0x55
+ 321 000a 17       		.uleb128 0x17
+ 322 000b 11       		.uleb128 0x11
+ 323 000c 01       		.uleb128 0x1
+ 324 000d 10       		.uleb128 0x10
+ 325 000e 17       		.uleb128 0x17
+ 326 000f 00       		.byte	0
+ 327 0010 00       		.byte	0
+ 328 0011 02       		.uleb128 0x2
+ 329 0012 24       		.uleb128 0x24
+ 330 0013 00       		.byte	0
+ 331 0014 0B       		.uleb128 0xb
+ 332 0015 0B       		.uleb128 0xb
+ 333 0016 3E       		.uleb128 0x3e
+ 334 0017 0B       		.uleb128 0xb
+ 335 0018 03       		.uleb128 0x3
+ 336 0019 0E       		.uleb128 0xe
+ 337 001a 00       		.byte	0
+ 338 001b 00       		.byte	0
+ 339 001c 03       		.uleb128 0x3
+ 340 001d 16       		.uleb128 0x16
+ 341 001e 00       		.byte	0
+ 342 001f 03       		.uleb128 0x3
+ 343 0020 0E       		.uleb128 0xe
+ARM GAS  /tmp/ccCHyIgR.s 			page 12
+
+
+ 344 0021 3A       		.uleb128 0x3a
+ 345 0022 0B       		.uleb128 0xb
+ 346 0023 3B       		.uleb128 0x3b
+ 347 0024 0B       		.uleb128 0xb
+ 348 0025 49       		.uleb128 0x49
+ 349 0026 13       		.uleb128 0x13
+ 350 0027 00       		.byte	0
+ 351 0028 00       		.byte	0
+ 352 0029 04       		.uleb128 0x4
+ 353 002a 24       		.uleb128 0x24
+ 354 002b 00       		.byte	0
+ 355 002c 0B       		.uleb128 0xb
+ 356 002d 0B       		.uleb128 0xb
+ 357 002e 3E       		.uleb128 0x3e
+ 358 002f 0B       		.uleb128 0xb
+ 359 0030 03       		.uleb128 0x3
+ 360 0031 08       		.uleb128 0x8
+ 361 0032 00       		.byte	0
+ 362 0033 00       		.byte	0
+ 363 0034 05       		.uleb128 0x5
+ 364 0035 2E       		.uleb128 0x2e
+ 365 0036 00       		.byte	0
+ 366 0037 3F       		.uleb128 0x3f
+ 367 0038 19       		.uleb128 0x19
+ 368 0039 03       		.uleb128 0x3
+ 369 003a 0E       		.uleb128 0xe
+ 370 003b 3A       		.uleb128 0x3a
+ 371 003c 0B       		.uleb128 0xb
+ 372 003d 3B       		.uleb128 0x3b
+ 373 003e 0B       		.uleb128 0xb
+ 374 003f 27       		.uleb128 0x27
+ 375 0040 19       		.uleb128 0x19
+ 376 0041 11       		.uleb128 0x11
+ 377 0042 01       		.uleb128 0x1
+ 378 0043 12       		.uleb128 0x12
+ 379 0044 06       		.uleb128 0x6
+ 380 0045 40       		.uleb128 0x40
+ 381 0046 18       		.uleb128 0x18
+ 382 0047 9742     		.uleb128 0x2117
+ 383 0049 19       		.uleb128 0x19
+ 384 004a 00       		.byte	0
+ 385 004b 00       		.byte	0
+ 386 004c 06       		.uleb128 0x6
+ 387 004d 34       		.uleb128 0x34
+ 388 004e 00       		.byte	0
+ 389 004f 03       		.uleb128 0x3
+ 390 0050 0E       		.uleb128 0xe
+ 391 0051 3A       		.uleb128 0x3a
+ 392 0052 0B       		.uleb128 0xb
+ 393 0053 3B       		.uleb128 0x3b
+ 394 0054 05       		.uleb128 0x5
+ 395 0055 49       		.uleb128 0x49
+ 396 0056 13       		.uleb128 0x13
+ 397 0057 3F       		.uleb128 0x3f
+ 398 0058 19       		.uleb128 0x19
+ 399 0059 3C       		.uleb128 0x3c
+ 400 005a 19       		.uleb128 0x19
+ARM GAS  /tmp/ccCHyIgR.s 			page 13
+
+
+ 401 005b 00       		.byte	0
+ 402 005c 00       		.byte	0
+ 403 005d 07       		.uleb128 0x7
+ 404 005e 35       		.uleb128 0x35
+ 405 005f 00       		.byte	0
+ 406 0060 49       		.uleb128 0x49
+ 407 0061 13       		.uleb128 0x13
+ 408 0062 00       		.byte	0
+ 409 0063 00       		.byte	0
+ 410 0064 00       		.byte	0
+ 411              		.section	.debug_aranges,"",%progbits
+ 412 0000 34000000 		.4byte	0x34
+ 413 0004 0200     		.2byte	0x2
+ 414 0006 00000000 		.4byte	.Ldebug_info0
+ 415 000a 04       		.byte	0x4
+ 416 000b 00       		.byte	0
+ 417 000c 0000     		.2byte	0
+ 418 000e 0000     		.2byte	0
+ 419 0010 00000000 		.4byte	.LFB112
+ 420 0014 02000000 		.4byte	.LFE112-.LFB112
+ 421 0018 00000000 		.4byte	.LFB113
+ 422 001c 02000000 		.4byte	.LFE113-.LFB113
+ 423 0020 00000000 		.4byte	.LFB114
+ 424 0024 02000000 		.4byte	.LFE114-.LFB114
+ 425 0028 00000000 		.4byte	.LFB115
+ 426 002c 02000000 		.4byte	.LFE115-.LFB115
+ 427 0030 00000000 		.4byte	0
+ 428 0034 00000000 		.4byte	0
+ 429              		.section	.debug_ranges,"",%progbits
+ 430              	.Ldebug_ranges0:
+ 431 0000 00000000 		.4byte	.LFB112
+ 432 0004 02000000 		.4byte	.LFE112
+ 433 0008 00000000 		.4byte	.LFB113
+ 434 000c 02000000 		.4byte	.LFE113
+ 435 0010 00000000 		.4byte	.LFB114
+ 436 0014 02000000 		.4byte	.LFE114
+ 437 0018 00000000 		.4byte	.LFB115
+ 438 001c 02000000 		.4byte	.LFE115
+ 439 0020 00000000 		.4byte	0
+ 440 0024 00000000 		.4byte	0
+ 441              		.section	.debug_line,"",%progbits
+ 442              	.Ldebug_line0:
+ 443 0000 20010000 		.section	.debug_str,"MS",%progbits,1
+ 443      0200DC00 
+ 443      00000201 
+ 443      FB0E0D00 
+ 443      01010101 
+ 444              	.LASF6:
+ 445 0000 6C6F6E67 		.ascii	"long long int\000"
+ 445      206C6F6E 
+ 445      6720696E 
+ 445      7400
+ 446              	.LASF3:
+ 447 000e 73686F72 		.ascii	"short unsigned int\000"
+ 447      7420756E 
+ 447      7369676E 
+ 447      65642069 
+ARM GAS  /tmp/ccCHyIgR.s 			page 14
+
+
+ 447      6E7400
+ 448              	.LASF8:
+ 449 0021 756E7369 		.ascii	"unsigned int\000"
+ 449      676E6564 
+ 449      20696E74 
+ 449      00
+ 450              	.LASF1:
+ 451 002e 756E7369 		.ascii	"unsigned char\000"
+ 451      676E6564 
+ 451      20636861 
+ 451      7200
+ 452              	.LASF13:
+ 453 003c 5F5F6561 		.ascii	"__early_init\000"
+ 453      726C795F 
+ 453      696E6974 
+ 453      00
+ 454              	.LASF5:
+ 455 0049 6C6F6E67 		.ascii	"long unsigned int\000"
+ 455      20756E73 
+ 455      69676E65 
+ 455      6420696E 
+ 455      7400
+ 456              	.LASF15:
+ 457 005b 5F5F6465 		.ascii	"__default_exit\000"
+ 457      6661756C 
+ 457      745F6578 
+ 457      697400
+ 458              	.LASF7:
+ 459 006a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 459      206C6F6E 
+ 459      6720756E 
+ 459      7369676E 
+ 459      65642069 
+ 460              	.LASF17:
+ 461 0081 2F757372 		.ascii	"/usr/src/chibios/os/common/ports/ARMCMx/compilers/G"
+ 461      2F737263 
+ 461      2F636869 
+ 461      62696F73 
+ 461      2F6F732F 
+ 462 00b4 43432F63 		.ascii	"CC/crt1.c\000"
+ 462      7274312E 
+ 462      6300
+ 463              	.LASF14:
+ 464 00be 5F5F6C61 		.ascii	"__late_init\000"
+ 464      74655F69 
+ 464      6E697400 
+ 465              	.LASF12:
+ 466 00ca 5F5F636F 		.ascii	"__core_init\000"
+ 466      72655F69 
+ 466      6E697400 
+ 467              	.LASF4:
+ 468 00d6 6C6F6E67 		.ascii	"long int\000"
+ 468      20696E74 
+ 468      00
+ 469              	.LASF16:
+ 470 00df 474E5520 		.ascii	"GNU C 4.8.4 20141219 (release) -mcpu=cortex-m4 -mno"
+ 470      4320342E 
+ARM GAS  /tmp/ccCHyIgR.s 			page 15
+
+
+ 470      382E3420 
+ 470      32303134 
+ 470      31323139 
+ 471 0112 2D746875 		.ascii	"-thumb-interwork -mthumb -ggdb -O2 -fomit-frame-poi"
+ 471      6D622D69 
+ 471      6E746572 
+ 471      776F726B 
+ 471      202D6D74 
+ 472 0145 6E746572 		.ascii	"nter -falign-functions=16 -ffunction-sections -fdat"
+ 472      202D6661 
+ 472      6C69676E 
+ 472      2D66756E 
+ 472      6374696F 
+ 473 0178 612D7365 		.ascii	"a-sections -fno-common -flto\000"
+ 473      6374696F 
+ 473      6E73202D 
+ 473      666E6F2D 
+ 473      636F6D6D 
+ 474              	.LASF18:
+ 475 0195 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 475      52784275 
+ 475      66666572 
+ 475      00
+ 476              	.LASF0:
+ 477 01a2 7369676E 		.ascii	"signed char\000"
+ 477      65642063 
+ 477      68617200 
+ 478              	.LASF9:
+ 479 01ae 5F5F696E 		.ascii	"__int32_t\000"
+ 479      7433325F 
+ 479      7400
+ 480              	.LASF2:
+ 481 01b8 73686F72 		.ascii	"short int\000"
+ 481      7420696E 
+ 481      7400
+ 482              	.LASF10:
+ 483 01c2 696E7433 		.ascii	"int32_t\000"
+ 483      325F7400 
+ 484              	.LASF11:
+ 485 01ca 73697A65 		.ascii	"sizetype\000"
+ 485      74797065 
+ 485      00
+ 486              		.comm	__gnu_lto_v1,1,1
+ 487              		.ident	"GCC: (4.8.4-1+11-1) 4.8.4 20141219 (release)"
+ARM GAS  /tmp/ccCHyIgR.s 			page 16
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 crt1.c
+     /tmp/ccCHyIgR.s:123    .text.__core_init:00000000 $t
+     /tmp/ccCHyIgR.s:129    .text.__core_init:00000000 __core_init
+     /tmp/ccCHyIgR.s:142    .text.__early_init:00000000 $t
+     /tmp/ccCHyIgR.s:148    .text.__early_init:00000000 __early_init
+     /tmp/ccCHyIgR.s:160    .text.__late_init:00000000 $t
+     /tmp/ccCHyIgR.s:166    .text.__late_init:00000000 __late_init
+     /tmp/ccCHyIgR.s:178    .text.__default_exit:00000000 $t
+     /tmp/ccCHyIgR.s:184    .text.__default_exit:00000000 __default_exit
+                            *COM*:00000001 __gnu_lto_v1
+                     .debug_frame:00000010 $d
+
+NO UNDEFINED SYMBOLS

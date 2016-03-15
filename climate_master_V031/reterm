@@ -1,0 +1,15 @@
+#!/bin/sh
+
+terminal=gtkterm
+terminaparam="-c disc"
+
+pkill gtkterm
+sleep 1
+
+echo killterm
+
+
+# declare STRING variable
+STRING="Hello World"
+echo start term
+    ${terminal} ${terminalparam} &

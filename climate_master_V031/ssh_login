@@ -1,0 +1,27 @@
+#!/bin/sh
+
+terminal=gtkterm
+terminaparam="-c disc"
+
+pkill gtkterm
+sleep 1
+
+echo killterm
+
+# declare STRING variable
+STRING="Hello World"
+echo start term
+	${terminal} ${terminalparam} &
+
+echo start_tlenet
+host=192.168.5.139
+port=23
+pass=xxxx
+cmd1=24
+cmd2=4
+cmd3=21
+
+telnet ${host} ${port}
+
+#print variable on a screen
+#echo $STRING
